@@ -1,7 +1,29 @@
 # Jogo de Batalha
 
 ## Descrição
-Este é um jogo de batalha onde o jogador controla um herói que enfrenta uma série de inimigos. O objetivo é derrotar todos os inimigos e completar o jogo.
+O projeto foi desenvolvido em Python , uma linguagem de programação de alto nível, interpretada e multiparadigma que é amplamente utilizada para diversos propósitos, desde scripts simples até aplicações complexas.
+
+### Características da Linguagem no Projeto:
+1. Orientação a Objetos (OOP): 
+   - O código utiliza classes ( personagem , heroi , inimigo , jogo ) para estruturar a lógica do jogo.
+   - Herança ( heroi e inimigo herdam de personagem ).
+   - Encapsulamento (atributos privados como __vida , __energia , métodos como get_nome() ).
+2. Módulos e Bibliotecas:  
+   - random é usado para gerar números aleatórios (dano dos ataques, ações do inimigo).
+3. Funcionalidades Principais:
+   - Sistema de Batalha:
+     - Turnos entre herói e inimigo.
+     - Diferentes tipos de ataques (normal, especial, crítico).
+     - Cura e regeneração de energia.
+   - Progressão:
+     - O herói sobe de nível após derrotar inimigos.
+   - Interação com o Usuário:
+     - Menu de ações via input() .
+     - Exibição de status ( exibirDetalhes() ).
+4. Tratamento de Dados: 
+   - Uso de dicionários ( self.inimigos ) para armazenar informações dos inimigos.
+5. Lógica de Jogo:
+   - Loop principal ( while ) controla a batalha até a vitória ou derrota.
 
 ## Instalação
 1. Clone o repositório para sua máquina local.

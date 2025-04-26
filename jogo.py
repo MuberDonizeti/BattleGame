@@ -1,3 +1,4 @@
+
 import random
 # personagem = classe mãe
 class personagem:
@@ -22,7 +23,7 @@ class personagem:
         if self.__vida < 0:
             self.__vida = 0
     def atacar(self, alvo):
-        dano = random.randint(self.get_nivel() * 3, self.get_nivel() * 6)
+        dano = random.randint(self.get_nivel() * 2, self.get_nivel() * 4)
         alvo.receberAtaque(dano)
         print(f'{self.get_nome()} atacou {alvo.get_nome()} e causou {dano} pontos de dano \n')
     
@@ -155,7 +156,7 @@ class jogo:
         Regras do jogo:
         - Cada inimigo aparecerá com um nome, vida e tipo.
         - O herói terá 100 de vida e poderá escolher entre 5 ações:
-            1 - Ataque Normal: causará dano aleatório entre 3 e 6 vezes o nível do herói.
+            1 - Ataque Normal: causará dano aleatório entre 2 e 4 vezes o nível do herói.
             2 - Ataque Especial: causará dano aleatório entre 4 e 6 vezes o nível do herói.
             3 - Ataque Crítico: causará dano aleatório entre 6 e 8 vezes o nível do herói.
             4 - Curar: restaurará 5 a 10 vezes o nível do herói de vida.
